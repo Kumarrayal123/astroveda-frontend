@@ -19,7 +19,7 @@ const Blog = () => {
     const fetchBlogs = async () => {
         try {
             // Updated to fetch from backend
-            const response = await fetch('http://localhost:5000/api/blogs');
+            const response = await fetch('https://astroveda-backend.onrender.com');
             const data = await response.json();
             setBlogs(data);
         } catch (error) {

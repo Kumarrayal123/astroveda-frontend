@@ -36,7 +36,7 @@ const Home = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/blogs');
+                const response = await fetch('https://astroveda-backend.onrender.com');
                 const data = await response.json();
                 setLatestBlogs(data.slice(0, 3)); // Get only top 3
             } catch (error) {
