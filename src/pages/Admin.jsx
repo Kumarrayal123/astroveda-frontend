@@ -349,10 +349,36 @@ const Admin = () => {
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Mobile Header */}
-        <header className="bg-white shadow-sm border-b border-gray-200 md:hidden flex items-center justify-between px-4 h-16 shrink-0">
-          <h1 className="text-xl font-bold text-gray-900">Admin Dashboard</h1>
-          <button onClick={handleLogout} className="text-red-600"><LogOut size={20} /></button>
+        {/* Mobile Header with Tab Navigation */}
+        <header className="bg-white shadow-sm border-b border-gray-200 md:hidden shrink-0">
+          <div className="flex items-center justify-between px-4 h-14 border-b border-gray-100">
+            <h1 className="text-lg font-bold text-astro-pink">Admin Panel</h1>
+            <button onClick={handleLogout} className="text-red-600 p-2 hover:bg-red-50 rounded-lg transition-colors">
+              <LogOut size={20} />
+            </button>
+          </div>
+
+          {/* Mobile Tab Navigation */}
+          <nav className="flex overflow-x-auto scrollbar-hide bg-white">
+            {[
+              { id: 'users', label: 'Users', icon: Users },
+              { id: 'bookings', label: 'Bookings', icon: Calendar },
+              { id: 'blogs', label: 'Blogs', icon: BookOpen },
+              { id: 'queries', label: 'Queries', icon: MessageSquare },
+            ].map(item => (
+              <button
+                key={item.id}
+                onClick={() => setActiveTab(item.id)}
+                className={`flex-shrink-0 flex flex-col items-center gap-1 px-4 py-3 min-w-[80px] transition-colors
+                          ${activeTab === item.id
+                    ? 'text-astro-pink border-b-2 border-astro-pink bg-astro-pink/5'
+                    : 'text-gray-600 border-b-2 border-transparent hover:bg-gray-50'}`}
+              >
+                <item.icon size={20} />
+                <span className="text-xs font-medium">{item.label}</span>
+              </button>
+            ))}
+          </nav>
         </header>
 
         {/* Dynamic Content */}
