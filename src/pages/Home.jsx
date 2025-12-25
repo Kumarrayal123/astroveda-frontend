@@ -26,6 +26,7 @@ import img9 from "../assets/images/img9.jpg"
 import img10 from "../assets/images/img10.jpg"
 import img11 from "../assets/images/img11.1.jpg"
 import img12 from "../assets/images/img12.jpg"
+import api from '../utils/api';
 
 const Home = () => {
     const [openIndex, setOpenIndex] = useState(0);
@@ -36,9 +37,9 @@ const Home = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await fetch('https://astroveda-backend.onrender.com');
-                const data = await response.json();
-                setLatestBlogs(data.slice(0, 3)); // Get only top 3
+                const response = await api.get('/blogs');
+                const data = response.data;
+                setLatestBlogs(Array.isArray(data) ? data.slice(0, 3) : []);
             } catch (error) {
                 console.error('Error fetching blogs:', error);
             }
@@ -507,11 +508,11 @@ const Home = () => {
                             "https://www.youtube.com/embed/7XnCW-FJ-oc?si=_mtcdCjao7LflZjk",
                             "https://www.youtube.com/embed/MKMs45LAdLk?si=PsJHoCXuPfGzPBvv",
                             "https://www.youtube.com/embed/qdZak6-6F8Y?si=0BYbCJcmoDDZO7vp",
-                            "https://www.youtube.com/embed/BvILX3D_YgQ?si=kSFEM2X9z0Ur84pg", 
-                            "https://www.youtube.com/embed/uF5iY5ib_bg?si=S0g8PtGeLUSXuFP-", 
+                            "https://www.youtube.com/embed/BvILX3D_YgQ?si=kSFEM2X9z0Ur84pg",
+                            "https://www.youtube.com/embed/uF5iY5ib_bg?si=S0g8PtGeLUSXuFP-",
                             "https://www.youtube.com/embed/MKMs45LAdLk?si=cdgLLjMVbo4UaOxN",
-                            "https://www.youtube.com/embed/iwS6uysbvu0?si=SH2xw8IYTnRusIH5", 
-                            "https://www.youtube.com/embed/nFTxX9S2MS8?si=U3u0vaNUbMkt8Qzr" 
+                            "https://www.youtube.com/embed/iwS6uysbvu0?si=SH2xw8IYTnRusIH5",
+                            "https://www.youtube.com/embed/nFTxX9S2MS8?si=U3u0vaNUbMkt8Qzr"
                         ].map((src, i) => (
                             <div
                                 key={i}

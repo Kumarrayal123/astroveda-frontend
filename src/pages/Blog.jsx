@@ -3,6 +3,7 @@ import Section from '../components/Section';
 import PageTransition from '../components/PageTransition';
 import { Search, ChevronRight, Calendar, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import api from '../utils/api';
 
 const Blog = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -18,23 +19,32 @@ const Blog = () => {
 
     const fetchBlogs = async () => {
         try {
-            // Updated to fetch from backend
-            const response = await fetch('https://astroveda-backend.onrender.com');
-            const data = await response.json();
-            setBlogs(data);
+            const response = await api.get('/blogs');
+            console.log('API Response:', response.data);
+            setBlogs(Array.isArray(response.data) ? response.data : []);
         } catch (error) {
             console.error('Error fetching blogs:', error);
+            setBlogs([]);
         } finally {
             setLoading(false);
         }
     };
 
     const filteredBlogs = blogs.filter(blog => {
-        const matchesSearch = blog.title.toLowerCase().includes(searchTerm.toLowerCase());
-        // Backend might send tags as array, so check if category matches any tag or if category is 'All'
-        const matchesCategory = activeCategory === 'All' || (blog.tags && blog.tags.includes(activeCategory));
+        if (!blog || !blog.title) return false;
+
+        const title = blog.title.toLowerCase();
+        const search = searchTerm.toLowerCase();
+        const matchesSearch = title.includes(search);
+
+        // Handle tags safely
+        const blogTags = Array.isArray(blog.tags) ? blog.tags : [];
+        const matchesCategory = activeCategory === 'All' || blogTags.includes(activeCategory);
+
         return matchesSearch && matchesCategory;
     });
+
+    console.log('Filtered Blogs:', filteredBlogs);
 
     if (loading) {
         return (
