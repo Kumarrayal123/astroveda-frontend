@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-astro-pink: #FF7BB5;
+  --color-astro-orange: #FFB86B;
+  --color-astro-yellow: #FFE07A;
+  --color-astro-maroon: #4A0404;
+  --color-astro-gold: #D4AF37;
+  --color-primary-text: #1F1F1F;
+  --color-secondary-text: #444444;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  background-color: white;
+  color: var(--color-primary-text);
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
+.astro-gradient {
+  background: linear-gradient(135deg, var(--color-astro-pink), var(--color-astro-orange), var(--color-astro-yellow));
+}
+
+.astro-text-gradient {
+  background: linear-gradient(135deg, var(--color-astro-pink), var(--color-astro-orange), var(--color-astro-yellow));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* .astro-gradient-text {
+  background: linear-gradient(135deg, var(--color-astro-pink), var(--color-astro-orange), var(--color-astro-yellow));
+} */
+
+.astro-gradient-text {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-astro-pink),
+    var(--color-astro-orange),
+    var(--color-astro-yellow)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.soft-shadow {
+  box-shadow: 0 10px 30px -10px rgba(255, 123, 181, 0.2);
+}
+
+.ornate-frame {
+  @apply relative p-4;
+}
+
+.ornate-frame::before {
+  content: '';
+  @apply absolute inset-0 border-2 border-astro-gold/30 rounded-lg pointer-events-none;
+}
+
+.ornate-frame::after {
+  content: '';
+  /* @apply absolute -inset-2 border border-astro-[#FFE07A] rounded-xl pointer-events-none; */
+  .card-glow {
+  @apply absolute -inset-2 rounded-xl pointer-events-none;
+  border: 1px solid #FFE07A;
+}
+
+}
+
+.section-glow {
+  @apply relative;
+}
+
+.section-glow::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-blue-50/20 via-white to-blue-50/20 -z-10 blur-3xl rounded-full;
+}
