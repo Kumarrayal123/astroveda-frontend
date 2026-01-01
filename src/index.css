@@ -1,6 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
+:root {
   --color-astro-pink: #FF7BB5;
   --color-astro-orange: #FFB86B;
   --color-astro-yellow: #FFE07A;
@@ -9,11 +11,6 @@
   --color-primary-text: #1F1F1F;
   --color-secondary-text: #444444;
 
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", sans-serif;
-}
-
-:root {
   background-color: white;
   color: var(--color-primary-text);
   scroll-behavior: smooth;
@@ -43,10 +40,6 @@ h6 {
   color: transparent;
 }
 
-/* .astro-gradient-text {
-  background: linear-gradient(135deg, var(--color-astro-pink), var(--color-astro-orange), var(--color-astro-yellow));
-} */
-
 .astro-gradient-text {
   background-image: linear-gradient(
     135deg,
@@ -57,8 +50,6 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
 
 .glass-card {
   @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
@@ -79,12 +70,8 @@ h6 {
 
 .ornate-frame::after {
   content: '';
-  /* @apply absolute -inset-2 border border-astro-[#FFE07A] rounded-xl pointer-events-none; */
-  .card-glow {
   @apply absolute -inset-2 rounded-xl pointer-events-none;
   border: 1px solid #FFE07A;
-}
-
 }
 
 .section-glow {

@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df757232.css",
+    "main.js": "/static/js/main.c7017880.js",
+    "static/media/img1.jpg": "/static/media/img1.ffa8126377bcf3594738.jpg",
+    "static/media/Astroindia.pdf": "/static/media/Astroindia.29e6875c5810b363a7c3.pdf",
+    "static/media/img10.jpg": "/static/media/img10.1189f4b52db66c2b4485.jpg",
+    "static/media/img6.jpg": "/static/media/img6.6b4731dc5a105a76c5aa.jpg",
+    "static/media/astrology-cosmic.png": "/static/media/astrology-cosmic.1301c3eae9e865933612.png",
+    "static/media/palmistry-hero.png": "/static/media/palmistry-hero.a0e404210107f854494d.png",
+    "static/media/astrology-about.png": "/static/media/astrology-about.8893ecab43d0859fba88.png",
+    "static/media/img9.jpg": "/static/media/img9.14dc88af3899d4d18fb0.jpg",
+    "static/media/astrology-img1.jpg": "/static/media/astrology-img1.e2d6949cec11a152f271.jpg",
+    "static/media/logo.png": "/static/media/logo.8ab134453cead897b9ff.png",
+    "static/media/astrology-consultation.png": "/static/media/astrology-consultation.254a14cd3a91cf043bd9.png",
+    "static/media/horoscope-img.jpg": "/static/media/horoscope-img.7b3c335f7df4270ee719.jpg",
+    "static/media/astrology-charts.png": "/static/media/astrology-charts.60c68dec155ed441d5a1.png",
+    "static/media/img12.jpg": "/static/media/img12.cc4b93f2a6aa1b96e7a2.jpg",
+    "static/media/numerology.jpg": "/static/media/numerology.83cb27825cc6b2933bc5.jpg",
+    "static/media/kundli-report.png": "/static/media/kundli-report.55abae502982e44ea563.png",
+    "static/media/img2.jpg": "/static/media/img2.ae0ad6c33706c5bb5a77.jpg",
+    "static/media/img4.jpg": "/static/media/img4.c5ba7e7ace092f52aced.jpg",
+    "static/media/img11.1.jpg": "/static/media/img11.1.87bc83c3b3a8a5a9d4f3.jpg",
+    "static/media/img7.jpg": "/static/media/img7.63ab0192633066d0455a.jpg",
+    "static/media/img3.jpg": "/static/media/img3.d7bc0421e9a4480812f2.jpg",
+    "static/media/img8.jpg": "/static/media/img8.af845cc0bcb8c3404f5c.jpg",
+    "static/media/img5.jpg": "/static/media/img5.812ffa9f0d1c076067fa.jpg",
+    "static/media/horoscope.png": "/static/media/horoscope.67b52c37a2528ea78b70.png",
+    "static/media/astrology.png": "/static/media/astrology.5a7c841011e40b74b02e.png",
+    "static/media/numerology.png": "/static/media/numerology.204b3c52a0ce48dd47d5.png",
+    "static/media/sahasrara.png": "/static/media/sahasrara.6556e22c6b20f1339c2c.png",
+    "static/media/compass.png": "/static/media/compass.c4a1b660a6954d959419.png",
+    "static/media/chiromancy.png": "/static/media/chiromancy.ea188214e35cfe284570.png",
+    "index.html": "/index.html",
+    "main.df757232.css.map": "/static/css/main.df757232.css.map",
+    "main.c7017880.js.map": "/static/js/main.c7017880.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df757232.css",
+    "static/js/main.c7017880.js"
+  ]
+}

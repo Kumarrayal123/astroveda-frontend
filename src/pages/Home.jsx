@@ -149,8 +149,13 @@ const Home = () => {
             {/* Featured Services (Redesigned based on achosenson.com) */}
             <Section className="section-glow">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold astro-text-gradient mb-4">Our Services</h2>
-                    <p className="text-xl text-secondary-text">Unlock your true potential with us.</p>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold  mb-4">Our Services</h2>
+                    {/* <p className="text-xl text-secondary-text">Unlock your true potential with us.</p> */}
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <div className="h-[1px] w-35 max-w-[100px] bg-[#FF7BB5]"></div>
+                        <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                        <div className="h-[1px] w-35 max-w-[100px] bg-[#FF7BB5]"></div>
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {[
@@ -221,7 +226,12 @@ const Home = () => {
             {/* About Us Preview */}
             <Section>
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold astro-text-gradient mb-4">About Us</h2>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">About Us</h2>
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <div className="h-[1px] w-full max-w-[70px] bg-[#FF7BB5]"></div>
+                        <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                        <div className="h-[1px] w-full max-w-[70px] bg-[#FF7BB5]"></div>
+                    </div>
                     <p className="text-xl text-secondary-text">At Astro Veda Creations, we bridge the gap between ancient wisdom and modern living.</p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -268,6 +278,11 @@ const Home = () => {
                         Free Astrology Readings
                     </h2>
                 </div>
+                <div className="flex items-center justify-center gap-4 mb-8">
+                    <div className="h-[1px] w-full max-w-[200px] bg-[#FF7BB5]"></div>
+                    <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                    <div className="h-[1px] w-full max-w-[200px] bg-[#FF7BB5]"></div>
+                </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-10 gap-y-14">
                     {[
@@ -309,14 +324,14 @@ const Home = () => {
 
             <Section>
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold astro-gradient-text mb-2">Why ASTRO-VEDA</h2>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold mb-2">Why ASTRO-VEDA</h2>
                     <p className="text-xl md:text-2xl  font-serif mb-8 italic">Because we provide the most authentic Vedic guidance</p>
 
                     {/* Ornamental Divider */}
                     <div className="flex items-center justify-center gap-4 mb-8">
-                        <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                        <div className="h-[1px] w-full max-w-[200px] bg-[#FF7BB5]"></div>
                         <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
-                        <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                        <div className="h-[1px] w-full max-w-[200px] bg-[#FF7BB5]"></div>
                     </div>
 
                     <div className="uppercase tracking-[0.2em]  font-bold text-sm md:text-base mb-10 leading-relaxed max-w-3xl mx-auto">
@@ -427,8 +442,14 @@ const Home = () => {
             <Section className="bg-white">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold astro-text-gradient mb-4">Astrology FAQs</h2>
-                        <div className="h-1.5 w-24 astro-gradient mx-auto rounded-full" />
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold  mb-4">Astrology FAQs</h2>
+                        {/* <div className="h-1.5 w-24 astro-gradient mx-auto rounded-full" /> */}
+                        <div className="flex items-center justify-center gap-4 mb-8">
+                            <div className="h-[1px] w-full max-w-[120px] bg-[#FF7BB5]"></div>
+                            <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                            <div className="h-[1px] w-full max-w-[120px] bg-[#FF7BB5]"></div>
+                        </div>
+
                     </div>
 
                     <div className="space-y-4">
@@ -490,8 +511,12 @@ const Home = () => {
 
                 <div className="text-center mb-16 relative z-10 px-4">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary-text mb-4">Explore Our Tutorials</h2>
-                    <p className="text-xl text-secondary-text">Watch expert insights on Vedic Astrology (Hover to pause)</p>
-                    <div className="h-1.5 w-24 astro-gradient mx-auto rounded-full mt-6" />
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                        <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                        <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                    </div>
+
                 </div>
 
                 {/* Marquee Container */}
@@ -539,7 +564,12 @@ const Home = () => {
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary-text mb-4">What Our Clients Say</h2>
-                        <div className="h-1.5 w-24 astro-gradient mx-auto rounded-full" />
+                        <div className="flex items-center justify-center gap-4 mb-8">
+                            <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                            <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                            <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                        </div>
+
                     </div>
 
                     {/* Testimonial Content (Now on Top) */}
@@ -616,19 +646,37 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary-text mb-4">Latest Insights</h2>
-                            <div className="h-1.5 w-24 astro-gradient rounded-full mb-6" />
+                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary-text mb-4">
+                                Latest Insights
+                            </h2>
+
+                            {/* Divider */}
+                            <div className="flex items-center gap-4 mb-6">
+                                <div className="h-[1px] w-35 bg-[#FF7BB5]"></div>
+                                <div className="text-astro-pink">
+                                    <Sparkles size={20} fill="currentColor" />
+                                </div>
+                                <div className="h-[1px] w-35 bg-[#FF7BB5]"></div>
+                            </div>
+                          
+
                             <p className="text-lg text-secondary-text max-w-xl">
                                 Explore the ancient wisdom of Vedic sciences and stay updated with celestial alignments.
                             </p>
                         </div>
+
                         <Link
                             to="/blog"
                             className="flex items-center gap-2 text-astro-pink font-bold hover:gap-3 transition-all group"
                         >
-                            Explore All Articles <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                            Explore All Articles
+                            <ChevronRight
+                                size={20}
+                                className="group-hover:translate-x-1 transition-transform"
+                            />
                         </Link>
                     </div>
+
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                         {latestBlogs.length > 0 ? latestBlogs.map((blog, i) => (

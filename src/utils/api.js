@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+    baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api',
     headers: {
         'Content-Type': 'application/json',
     },
@@ -59,7 +59,7 @@ api.interceptors.response.use(
             }
         } else if (error.request) {
             console.error('No response received from server:', error.request);
-            console.error('API Base URL:', import.meta.env.VITE_API_URL || 'http://localhost:5000/api');
+            console.error('API Base URL:', process.env.REACT_APP_API_URL || 'http://localhost:5000/api');
         } else {
             console.error('Error setting up request:', error.message);
         }
