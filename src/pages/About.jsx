@@ -11,11 +11,11 @@ const About = () => {
                 <div className="max-w-4xl mx-auto px-4">
                     <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary-text mb-4">Our Celestial Story</h1>
                     <p className="text-lg md:text-xl text-secondary-text max-w-2xl mx-auto">At Astro Veda Creations, we bridge the gap between ancient wisdom and modern living.</p>
-                       <div className="flex items-center justify-center gap-4 mb-8">
-                            <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
-                            <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
-                            <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
-                        </div>
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                        <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                        <div className="h-[1px] w-full max-w-[150px] bg-[#FF7BB5]"></div>
+                    </div>
                 </div>
             </section>
 
@@ -99,12 +99,12 @@ const About = () => {
             <Section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary-text mb-4">Our Values</h2>
-                       <div className="flex items-center justify-center gap-4 mb-8">
-                            <div className="h-[1px] w-full max-w-[50px] bg-[#FF7BB5]"></div>
-                            <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
-                            <div className="h-[1px] w-full max-w-[50px] bg-[#FF7BB5]"></div>
-                        </div>
-                    <div className="h-1.5 w-24 astro-gradient mx-auto rounded-full" />
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <div className="h-[1px] w-full max-w-[50px] bg-[#FF7BB5]"></div>
+                        <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
+                        <div className="h-[1px] w-full max-w-[50px] bg-[#FF7BB5]"></div>
+                    </div>
+                    {/* <div className="h-1.5 w-24 astro-gradient mx-auto rounded-full" /> */}
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
                     {[

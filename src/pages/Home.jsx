@@ -152,9 +152,9 @@ const Home = () => {
                     <h2 className="text-4xl md:text-5xl font-serif font-bold  mb-4">Our Services</h2>
                     {/* <p className="text-xl text-secondary-text">Unlock your true potential with us.</p> */}
                     <div className="flex items-center justify-center gap-4 mb-8">
-                        <div className="h-[1px] w-35 max-w-[100px] bg-[#FF7BB5]"></div>
+                        <div className="h-[1px] w-full max-w-[100px] bg-[#FF7BB5]"></div>
                         <div className="text-astro-pink"><Sparkles size={20} fill="currentColor" /></div>
-                        <div className="h-[1px] w-35 max-w-[100px] bg-[#FF7BB5]"></div>
+                        <div className="h-[1px] w-full max-w-[100px] bg-[#FF7BB5]"></div>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -202,9 +202,9 @@ const Home = () => {
                             className="bg-white p-10 rounded-2xl border border-gray-100 flex flex-col items-center text-center group"
                         >
                             <div className="ornate-frame mb-8 group-hover:scale-105 transition-transform duration-300">
-                                <div className="w-30 h-30 bg-astro-gold/5 rounded-full flex items-center justify-center">
+                                <div className="w-25 h-25 bg-astro-gold/5 rounded-full flex items-center justify-center">
                                     {typeof service.icon === 'string' ? (
-                                        <img src={service.icon} alt={service.title} className="w-30 h-30 object-contain" />
+                                        <img src={service.icon} alt={service.title} className="w-40 h-40 object-contain" />
                                     ) : (
                                         service.icon
                                     )}
@@ -651,14 +651,8 @@ const Home = () => {
                             </h2>
 
                             {/* Divider */}
-                            <div className="flex items-center gap-4 mb-6">
-                                <div className="h-[1px] w-35 bg-[#FF7BB5]"></div>
-                                <div className="text-astro-pink">
-                                    <Sparkles size={20} fill="currentColor" />
-                                </div>
-                                <div className="h-[1px] w-35 bg-[#FF7BB5]"></div>
-                            </div>
-                          
+
+
 
                             <p className="text-lg text-secondary-text max-w-xl">
                                 Explore the ancient wisdom of Vedic sciences and stay updated with celestial alignments.

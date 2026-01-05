@@ -12,14 +12,14 @@ const Footer = () => {
             { name: 'About Us', path: '/about' },
             { name: 'Blog', path: '/blog' },
             { name: 'Contact', path: '/contact' },
-            { name: 'Privacy Policy', path: '/privacy' }
+            { name: 'Booking', path: '/booking' }
         ],
         services: [
-            { name: 'Horoscope Reading', path: '/services' },
-            { name: 'Vastu Guidance', path: '/services' },
-            { name: 'Palmistry', path: '/services' },
-            { name: 'Numerology', path: '/services' },
-            { name: 'Astro Remedies', path: '/services' }
+            { name: 'Astrology', path: '/astrology' },
+            { name: 'Palmistry', path: '/palmistry' },
+            { name: 'Numerology', path: '/numerology' },
+            { name: 'Vastu', path: '/vastu' },
+            { name: 'Tantra', path: '/tantra' }
         ]
     };
 
@@ -124,7 +124,7 @@ const Footer = () => {
                         <ul className="space-y-6 relative z-10">
                             <li className="flex items-start space-x-4 group/item">
                                 <div className="w-10 h-10 rounded-xl bg-astro-pink/10 flex items-center justify-center text-astro-pink group-hover/item:scale-110 transition-transform">
-                                    <MapPin size={20} />
+                                    <MapPin size={30} />
                                 </div>
                                 <span className="text-gray-400 text-sm leading-relaxed pt-1">Shop No:4,Road No:8B,Bandari Layout,Vasanth Nagar Colony,Nizampet, Hyderabad, Ts.</span>
                             </li>
